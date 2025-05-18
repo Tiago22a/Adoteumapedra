@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- ---------------------------------------
+     META BÁSICAS
+------------------------------------------>
+<meta charset="UTF-8" />
+<meta http‑equiv="X‑UA‑Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Informações de página -->
+<title>Adote uma Pedra — Pedras únicas esperando por você</title>
+<meta name="description"
+      content="Adote uma Pedra: escolha sua companheira mineral, receba um certificado exclusivo e descubra a energia única de cada pedra." />
+<meta name="keywords"
+      content="pedras, cristais, adoção de pedras, pedras naturais, certificado de adoção, presentes criativos" />
+<meta name="author" content="Adote uma pedra" />
+<meta name="robots" content="index, follow" />
+
+<!-- Tema / cores de navegador -->
+<meta name="theme-color" content="#7e5bef" />
+<meta name="color-scheme" content="dark light" />
+
+
+
+<!-- ---------------------------------------
+     OPEN GRAPH (FACEBOOK, LINKEDIN, WHATSAPP, ETC.)
+------------------------------------------>
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="https://seu‑dominio.com/" />
+<meta property="og:title"       content="Adote uma Pedra — Pedras únicas esperando por você" />
+<meta property="og:description" content="Escolha sua companheira mineral e receba um certificado de adoção. Cada pedra é única, assim como você." />
+<meta property="og:image"       content="capa.png" />
+<meta property="og:image:alt"   content="Várias pedras minerais coloridas sobre fundo escuro" />
+<meta property="og:locale"      content="pt_BR" />
+
+<!-- ---------------------------------------
+     TWITTER CARDS
+------------------------------------------>
+<meta name="twitter:card"        content="summary_large_image" />
+
+<meta name="twitter:title"       content="Adote uma Pedra — Pedras únicas esperando por você" />
+<meta name="twitter:description" content="Escolha sua companheira mineral, receba um certificado exclusivo e descubra a energia única de cada pedra." />
+<meta name="twitter:image"       content="capa.png" />
+<meta name="twitter:image:alt"   content="Várias pedras minerais coloridas sobre fundo escuro" />
+
+<!-- ---------------------------------------
+     PWA / IOS / ANDROID
+------------------------------------------>
+<meta name="apple-mobile-web-app-title" content="Adote uma Pedra" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- ---------------------------------------
+     ALTERNATES / CANONICAL
+------------------------------------------>
+<link rel="canonical" href="https://seu‑dominio.com/" />
+<link rel="alternate" hreflang="pt-br" href="https://seu‑dominio.com/" />
+<link rel="alternate" hreflang="x-default" href="https://seu‑dominio.com/" />
+
+<!-- ---------------------------------------
+     ESTRUTURADOS (JSON-LD) — opcional, para SEO avançado
+------------------------------------------>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Adote uma Pedra",
+  "url": "https://seu‑dominio.com/",
+  "description": "Loja on‑line onde você adota pedras naturais e recebe um certificado exclusivo.",
+  "logo": "https://seu‑dominio.com/imagens/logo-512.png",
+  "sameAs": [
+    "https://www.instagram.com/SeuPerfil",
+    "https://www.facebook.com/SeuPerfil",
+    "https://wa.me/5575992492588"
+  ],
+  "currencyAccepted": "BRL",
+  "paymentAccepted": "PIX"
+}
+
+</script>
+
+  <style>
+    :root {
+      --roxo: #7e5bef;
+      --verde-oliva: #495a2a;
+      --preto: #111111;
+    }
+    
+  </style>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: 'fadeIn 1s ease-out both',
+            slideUp: 'slideUp 1s ease-out both'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 }
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(40px)', opacity: 0 },
+              '100%': { transform: 'translateY(0)', opacity: 1 }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-[var(--preto)] text-white flex flex-col">
+ <!-- Botão WhatsApp flutuante -->
+<a href="https://wa.me/5575992492588?text=Olá! Quero mais informações sobre as pedras "
+   class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 transition-colors
+          w-14 h-14 rounded-full shadow-xl flex items-center justify-center">
+  <!-- Ícone WhatsApp SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-7 h-7 fill-white">
+    <path d="M16 0C7.163 0 0 7.163 0 16a15.89 15.89 0 002.29 8.305L0 32l8.02-2.256A15.89 15.89 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.29 13.29 0 01-6.833-1.843l-.488-.29-4.758 1.336 1.34-4.64-.309-.505A13.286 13.286 0 1129.333 16 13.308 13.308 0 0116 29.333zm7.24-10.213c-.397-.199-2.35-1.16-2.714-1.293-.364-.133-.63-.199-.897.199-.266.398-1.03 1.293-1.262 1.559-.232.266-.465.299-.862.1-.397-.199-1.678-.618-3.196-1.974-1.184-1.06-1.98-2.372-2.214-2.77-.232-.399-.025-.614.174-.813.179-.178.398-.464.597-.696.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.099-.199-.897-2.158-1.229-2.948-.323-.774-.652-.668-.897-.678-.232-.01-.498-.012-.764-.012-.266 0-.698.1-1.062.498-.364.398-1.4 1.366-1.4 3.33s1.433 3.863 1.633 4.129c.199.266 2.815 4.29 6.833 6.014.955.412 1.699.657 2.279.84.957.306 1.83.263 2.515.16.767-.114 2.35-.96 2.68-1.886.331-.927.331-1.723.232-1.886-.098-.164-.364-.265-.76-.464z"/></svg>
+</a>
+
+    
+  <!-- Header -->
+  <header  class="w-full py-6 bg-[var(--verde-oliva)] flex items-center justify-center">
+    <div class="flex items-center gap-4">
+      <img data-aos="zoom-in" data-aos-duration="1000" src="capa.png" alt="Logo Adote uma Pedra" class="h-16 w-16 object-contain" />
+      <h1 data-aos="zoom-in" data-aos-duration="1000" class="text-3xl font-extrabold tracking-wider uppercase">Adote uma Pedra</h1>
+    </div>
+  </header>
+<br><br><br>
+  <!-- Hero -->
+  <section class="relative flex-1 flex items-center justify-center text-center px-4 py-16 bg-[var(--preto)]">
+    <div>
+      <h2 data-aos="zoom-in" data-aos-duration="1000" class="text-4xl md:text-5xl font-bold mb-4 text-[var(--roxo)]">Pedras únicas esperando por você!</h2>
+      <p data-aos="zoom-in" data-aos-duration="1000" class="text-lg max-w-xl mx-auto mb-8 opacity-90">Escolha sua companheira mineral e receba um certificado de adoção. Cada pedra é única — assim como você.</p>
+      <a data-aos="fade-up" data-aos-duration="1000" href="#loja" class="inline-block bg-[var(--roxo)] hover:bg-purple-700 transition text-white font-semibold py-3 px-8 rounded-xl shadow-lg">Ver coleção</a>
+    </div>
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="floating-dots w-full h-full"></div>
+    </div>
+  </section>
+<br><br>
+  <!-- Loja -->
+  <section id="loja" class="py-20 bg-[var(--preto)] relative z-10">
+    <div class="container mx-auto px-4">
+      <h3 data-aos="zoom-in" data-aos-duration="1000" class="text-3xl font-bold text-center mb-12 text-[var(--roxo)]">Escolha sua pedra</h3>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Pedra 1 -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center backdrop-blur-sm">
+          <div class="w-40 h-40 bg-white/10 rounded-xl flex items-center justify-center text-sm text-gray-300 mb-4"><img src="https://cdn.discordapp.com/attachments/1372319849811935232/1373717775092023358/image.png?ex=682b6de0&is=682a1c60&hm=810c40a46fb5b76a92c9c96dc2a2892f846e82c089ac3a14aff5063883cc4511&format=webp&quality=lossless&width=371&height=318" alt=""></div>
+          <h4 class="text-xl font-semibold mb-2">Robertinho</h4>
+          <p class="text-sm opacity-80 mb-4">Uma pedra impulsiva e extrovertida que ama se divertir</p>
+          <button class="mt-auto bg-[var(--verde-oliva)] hover:bg-green-700 transition text-white font-medium px-6 py-2 rounded-lg shadow-md" onclick="openModal('Pedra Robertinho')">Adotar</button>
+        </div>
+
+        <!-- Pedra 2 -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center backdrop-blur-sm">
+          <div class="w-40 h-40 bg-white/10 rounded-xl flex items-center justify-center text-sm text-gray-300 mb-4"><img src="https://cdn.discordapp.com/attachments/1372319849811935232/1373718059621290025/image.png?ex=682b6e23&is=682a1ca3&hm=9f5b994415baf6f748b5ecf1283f841d1dc8a390e33bd1d19c01057099f53088&" alt=""></div>
+          <h4 class="text-xl font-semibold mb-2">Cleiton</h4>
+          <p class="text-sm opacity-80 mb-4">Uma pedra ambivertida que prefere ficar na sua e quieta</p>
+          <button class="mt-auto bg-[var(--verde-oliva)] hover:bg-green-700 transition text-white font-medium px-6 py-2 rounded-lg shadow-md" onclick="openModal('Pedra Cleiton')">Adotar</button>
+        </div>
+
+        <!-- Pedra 3 -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center backdrop-blur-sm">
+          <div class="w-40 h-40 bg-white/10 rounded-xl flex items-center justify-center text-sm text-gray-300 mb-4"><img src="https://cdn.discordapp.com/attachments/1372319849811935232/1373718451037933682/image.png?ex=682b6e81&is=682a1d01&hm=9ecfa555934955f0dea9d59dde4737fd06cbdcf5911a478fd907e811e572e367&" alt=""></div>
+          <h4 class="text-xl font-semibold mb-2">Jailson</h4>
+          <p class="text-sm opacity-80 mb-4">Uma pedra engraçada e extrovertida</p>
+          <button class="mt-auto bg-[var(--verde-oliva)] hover:bg-green-700 transition text-white font-medium px-6 py-2 rounded-lg shadow-md" onclick="openModal('Pedra Jailson')">Adotar</button>
+        </div>
+
+        <!-- Pedra 4 -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center backdrop-blur-sm">
+          <div class="w-40 h-40 bg-white/10 rounded-xl flex items-center justify-center text-sm text-gray-300 mb-4"><img src="https://cdn.discordapp.com/attachments/1372319849811935232/1373718655740805150/image.png?ex=682b6eb1&is=682a1d31&hm=c479fae51913746aa12cdf816f3e3ec4f81834793400dfe659bcb6d98874a3a1&" alt=""></div>
+          <h4 class="text-xl font-semibold mb-2">Wesley</h4>
+          <p class="text-sm opacity-80 mb-4">Uma pedra meio fechada, mas é bem legal</p>
+          <button class="mt-auto bg-[var(--verde-oliva)] hover:bg-green-700 transition text-white font-medium px-6 py-2 rounded-lg shadow-md" onclick="openModal('Pedra Wesley')">Adotar</button>
+        </div>
+
+        <!-- Pedra 5 -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center backdrop-blur-sm">
+          <div class="w-40 h-40 bg-white/10 rounded-xl flex items-center justify-center text-sm text-gray-300 mb-4"><img src="https://cdn.discordapp.com/attachments/1372319849811935232/1373719009362444318/image.png?ex=682b6f06&is=682a1d86&hm=14116ef36e2f56b5e584d4c3b33ef416783f0ca33976d3c6baee2c55a87cb4f8&" alt=""></div>
+          <h4 class="text-xl font-semibold mb-2">Jeferson</h4>
+          <p class="text-sm opacity-80 mb-4">Pedra com pintinhas, perfeita para quem gosta de exclusividade.</p>
+          <button class="mt-auto bg-[var(--verde-oliva)] hover:bg-green-700 transition text-white font-medium px-6 py-2 rounded-lg shadow-md" onclick="openModal('Pedra Jeferson')">Adotar</button>
+        </div>
+
+        <!-- Pedra 6 -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center backdrop-blur-sm">
+          <div class="w-40 h-40 bg-white/10 rounded-xl flex items-center justify-center text-sm text-gray-300 mb-4"><img src="https://cdn.discordapp.com/attachments/1372319849811935232/1373719173099946024/image.png?ex=682b6f2d&is=682a1dad&hm=696f91007f59ff129f46b9842d60df14697d19f22d19f2193b14366911cd6d26&" alt=""></div>
+          <h4 class="text-xl font-semibold mb-2">Cristalito</h4>
+          <p class="text-sm opacity-80 mb-4">Uma pedra brilhante que ama conversar</p>
+          <button class="mt-auto bg-[var(--verde-oliva)] hover:bg-green-700 transition text-white font-medium px-6 py-2 rounded-lg shadow-md" onclick="openModal('Pedra Cristalino')">Adotar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal WhatsApp -->
+  <div id="wa-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white text-[var(--preto)] max-w-md w-full rounded-2xl p-8 relative">
+      <button id="close-modal" class="absolute top-3 right-3 text-2xl leading-none">&times;</button>
+      <h3 class="text-2xl font-bold mb-4 text-[var(--verde-oliva)]">Quase lá!</h3>
+      <p class="mb-4">Para concluir a adoção da <span id="selected-name" class="font-semibold"></span>, clique no botão abaixo e envie a mensagem automática via WhatsApp. O pagamento será combinado por Pix e você receberá seu certificado.</p>
+      <a id="wa-link" target="_blank" class="block text-center bg-[var(--roxo)] hover:bg-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg mb-2">Ir para WhatsApp</a>
+      <p class="text-sm text-center opacity-70">Responderemos em horário comercial.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-[var(--verde-oliva)] text-center text-sm text-white/80 mt-auto">
+    <p data-aos="zoom-in" data-aos-duration="1000">© 2025 Adote uma Pedra — Todos os direitos reservados</p>
+    <br>
+    <a  href="https://impulsodevendas.netlify.app/" " >Precisa de uma landing page que converte? aperte aqui!</a>
+    <br><br>
+    <a  href="https://discord.gg/M6ejDQnWXp" class="">Quero comprar cursos e e‑books</a>
+  </footer>
+
+  <!-- Script -->
+  <script>
+   function openModal(name){
+  selName.textContent = name;
+  const msg = encodeURIComponent(`Olá! Quero adotar a ${name}.`);
+  waLink.href = `https://wa.me/${phone}?text=${msg}`;
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+}
+
+
+    const modal = document.getElementById('wa-modal');
+    const closeBtn = document.getElementById('close-modal');
+    const waLink = document.getElementById('wa-link');
+    const selName = document.getElementById('selected-name');
+    const phone = '5575992492588'; // coloque o número da mãe/responsável aqui
+
+    function openModal(i){
+      const name = `${i}`;
+      selName.textContent = name;
+      const msg = encodeURIComponent(`Olá! Quero adotar a ${name}.`);
+      waLink.href = `https://wa.me/${phone}?text=${msg}`;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+    closeBtn.addEventListener('click',()=>modal.classList.add('hidden'));
+    modal.addEventListener('click',e=>{if(e.target===modal) modal.classList.add('hidden');});
+
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
